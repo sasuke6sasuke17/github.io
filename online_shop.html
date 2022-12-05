@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/online_shop.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>MintIn 公式オンラインショップ</title>
+</head>
+<body>
+
+<!--/ハンバーガーメニュー-->
+    <div class="open_btn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+        <div class="g-nav_list">
+            <a href="index.html"><p>MintIn</p></a>
+            <ul>
+                <li><a href="index.html#concept">MintInとは</a></li>
+                <li><a href="index.html#commit">MintInのこだわり</a></li>
+                <li><a href="index.html#pickup">Pick up</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="shopInfo.html">Shop Info</a></li>
+                <li><a href="online_shop.html">Online Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>  
+        $(".open_btn").click(function () {//ボタンがクリックされたら
+            $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            $("#g-nav").toggleClass('panelactive');//ヘッダーにpanelactiveクラスを付与
+        });
+        $("#g-nav li a").click(function () {//ナビゲーションのリンクがクリックされたら
+            $(".open_btn").removeClass('active');//ボタンの activeクラスを除去し
+            $("#g-nav").removeClass('panelactive');//ヘッダーのpanelactiveクラスも除去
+        });
+    </script>
+<!--/ハンバーガーメニュー-->
+<!--トップに戻るボタン-->
+    <div>
+        <a href="#" alt="トップへ戻る">
+            <div id="page_top">
+                <div class="top_btn"></div>
+            </div>
+        </a>
+    </div>
+<!--/トップに戻るボタン-->
+    <header id="header">
+        <div class="site_title">
+            <h2>MintIn</h2>
+            <h1>Online Shop</h1>
+        </div>
+        <ol class="breadcrumbs wrapper">
+            <li><a href="index.html">トップ</a></li>
+            <li>/</li>
+            <li>Online Shop</li>
+        </ol>
+    </header>
+
+    <main>
+        <section id="recommend">
+            <div class="ec_container wrapper">
+                <div>
+                    <h3>
+                        <span class="container_title">おすすめ</span>
+                        <span class="container_sub">recommend</span>
+                    </h3>
+                </div>
+                <div class="item_list">
+                    <div class="list_item">
+                        <a href="online_macaron.html">
+                            <img src="photo_online/online_img_recommend.jpg" class="item_img" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">ミントマカロン4個入り</p>
+                                <p class="listItemPrice">1,000円</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list_item">
+                        <a href="online_macaron.html">
+                            <img src="photo_online/online_img_recommend.jpg" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">ミントマカロン8個入り</p>
+                                <p class="listItemPrice">1,800円</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list_item">
+                        <a href="online_macaron.html">
+                            <img src="photo_online/online_img_recommend.jpg" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">ミントマカロン12個入り</p>
+                                <p class="listItemPrice">2,400円</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="all">
+            <div class="ec_container wrapper">
+                <div>
+                    <h3>
+                        <span class="container_title">商品一覧</span>
+                        <span class="container_sub">All Items</span>
+                    </h3>
+                </div>
+                <div class="item_list">
+                    <div class="list_item">
+                        <a href="online_ice.html">
+                            <img src="photo_online/online_img1.jpg" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">チョコミントアイス</p>
+                                <p class="listItemPrice">480円</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list_item">
+                        <a href="online_chocoCake.html">
+                            <img src="photo_online/online_img2.jpg" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">ミントムース<br>チョコレートケーキ</p>
+                                <p class="listItemPrice">880円</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list_item">
+                        <a href="online_cupCake.html">
+                            <img src="photo_online/online_img3.jpg" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">ライム香る<br>ミントクリームカップケーキ</p>
+                                <p class="listItemPrice">780円</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list_item">
+                        <a href="online_tea.html">
+                            <img src="photo_online/online_img4.jpg" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">ペパーミントティー20P</p>
+                                <p class="listItemPrice">1,280円</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list_item">
+                        <a href="online_manicure.html">
+                            <img src="photo_online/online_img5.jpg" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">ミント配合ネイルオイル</p>
+                                <p class="listItemPrice">1,480円</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list_item">
+                        <a href="online_bath&shower.html">
+                            <img src="photo_online/online_img6.jpg" alt="">
+                            <div class="item_overlay">
+                                <p class="item_title">ミントバスボム<br>ミントシャワーオイル セット</p>
+                                <p class="listItemPrice">2,400円</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>   
+<!-------------------------
+footer
+-------------------------->
+<footer id="footer">
+    <div class="flag_end">
+        <div class="footer_content">
+            <div class="mint_icon">
+                <img src="icon/mint.png" class="mint_e" alt="ミント">
+                <img src="icon/mint.png" class="mint_c" alt="ミント">
+                <img src="icon/mint.png" class="mint_e" alt="ミント">
+            </div>
+            <div class="site_title">
+                <p>MintIn</p>
+            </div>
+            <p class="copyright">
+                &copy; 2022 MintIn Co.ALL Right Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
