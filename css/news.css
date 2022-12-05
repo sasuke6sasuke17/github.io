@@ -220,7 +220,7 @@ main h2 {
 header
 -------------------------------------------*/
 #header {
-    background-image: url(./photo_top/shop_img1.jpg);
+    background-image: url(/photo_top/shop_img1.jpg);
     background-color: rgba(255, 255, 255, 0.4);
     background-blend-mode :lighten;
     background-size: cover;
