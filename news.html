@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/news.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>MintIn ニュース一覧</title>
+</head>
+<body>
+
+<!--/ハンバーガーメニュー-->
+    <div class="open_btn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+        <div class="g-nav_list">
+            <a href="index.html"><p>MintIn</p></a>
+            <ul>
+                <li><a href="index.html#consept">MintInとは</a></li>
+                <li><a href="index.html#commit">MintInのこだわり</a></li>
+                <li><a href="index.html#pickup">Pick up</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="shopInfo.html">Shop Info</a></li>
+                <li><a href="online_shop.html">Online Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>  
+        $(".open_btn").click(function () {//ボタンがクリックされたら
+            $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            $("#g-nav").toggleClass('panelactive');//ヘッダーにpanelactiveクラスを付与
+        });
+        $("#g-nav li a").click(function () {//ナビゲーションのリンクがクリックされたら
+            $(".open_btn").removeClass('active');//ボタンの activeクラスを除去し
+            $("#g-nav").removeClass('panelactive');//ヘッダーのpanelactiveクラスも除去
+        });
+    </script>
+<!--/ハンバーガーメニュー-->
+<!--トップに戻るボタン-->
+    <div>
+        <a href="#" alt="トップへ戻る">
+            <div id="page_top">
+                <div class="top_btn"></div>
+            </div>
+        </a>
+    </div>
+<!--/トップに戻るボタン-->
+    <header id="header">
+        <div class="site_title">
+            <h2>MintIn</h2>
+            <h1>News</h1>
+        </div>
+        <ol class="breadcrumbs wrapper">
+            <li><a href="index.html">トップ</a></li>
+            <li>/</li>
+            <li>ニュース一覧</li>
+        </ol>
+    </header>
+    <main>
+<!-------------------------
+news
+-------------------------->
+<section id="news_list">
+    <div class="news_content wrapper">
+        <h2 class="item_title">全てのニュース</h2>
+            <div class="news_container delayScroll">
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/news_img1.jpg" class="news_img" alt="YouTube">
+                        <div class="item_paragraph">
+                            <span class="news_date">2022.10.10</span>
+                            <p>YouTube「DOSANKOチャンネル」の中にて紹介されました。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/news_img2.jpg" class="news_img" alt="スイーツ大賞">
+                        <div class="item_paragraph">
+                            <span class="news_date">2022.7.25</span>
+                            <p>「2022年上半期バズったスイーツ大賞」にノミネートされました。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/news_img3.jpg" class="news_img" alt="">
+                        <div class="item_paragraph">
+                            <span class="news_date">2022.6.1</span>
+                            <p>オンラインショップが開設されました。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/commit_img1.jpg" class="news_img" alt="">
+                        <div class="item_paragraph">
+                            <span class="news_date">Text Text</span>
+                            <p>Text Text Text Text</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/commit_img1.jpg" class="news_img" alt="">
+                        <div class="item_paragraph">
+                            <span class="news_date">Text Text</span>
+                            <p>Text Text Text Text</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/commit_img1.jpg" class="news_img" alt="">
+                        <div class="item_paragraph">
+                            <span class="news_date">Text Text</span>
+                            <p>Text Text Text Text</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/commit_img1.jpg" class="news_img" alt="">
+                        <div class="item_paragraph">
+                            <span class="news_date">Text Text</span>
+                            <p>Text Text Text Text</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/commit_img1.jpg" class="news_img" alt="">
+                        <div class="item_paragraph">
+                            <span class="news_date">Text Text</span>
+                            <p>Text Text Text Text</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="news_inner">
+                    <div class="news_item">
+                        <img src="photo_top/commit_img1.jpg" class="news_img" alt="">
+                        <div class="item_paragraph">
+                            <span class="news_date">Text Text</span>
+                            <p>Text Text Text Text</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    </div>
+</section>
+    </main>
+</body>   
+<!-------------------------
+footer
+-------------------------->
+<footer id="footer">
+    <div class="flag_end">
+        <div class="footer_content">
+            <div class="mint_icon">
+                <img src="icon/mint.png" class="mint_e" alt="ミント">
+                <img src="icon/mint.png" class="mint_c" alt="ミント">
+                <img src="icon/mint.png" class="mint_e" alt="ミント">
+            </div>
+            <div class="site_title">
+                <p>MintIn</p>
+            </div>
+            <p class="copyright">
+                &copy; 2022 MintIn Co.ALL Right Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
